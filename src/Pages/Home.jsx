@@ -10,13 +10,13 @@ const Home = () => {
 
 	return (
 		<div className="max-w-[1200px] w-full m-auto">
-			<div className="flex justify-between px-20 py-5">
-				<button onClick={() => navigate("/add")} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Add new todos</button>
+			<div className="flex justify-between px-4 lg:px-20 py-5">
+				<button onClick={() => navigate("/add")} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-2 lg:px-4 rounded text-xs lg:text-sm">Add new todos</button>
 
 				<div className="flex gap-4">
 					<select
 						onChange={(e) => setFilterValue(e.target.value)}
-						className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+						className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-1 lg:px-4 rounded text-xs lg:text-sm"
 					>
 						<option value="">Filter by priority</option>
 						<option value="low">low</option>
@@ -25,7 +25,7 @@ const Home = () => {
 					</select>
 
 					<select
-						className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+						className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-1 lg:px-4 text-xs lg:text-sm rounded"
 						onChange={(e) => setSortValue(e.target.value)}
 					>
 						<option value="">Sort</option>

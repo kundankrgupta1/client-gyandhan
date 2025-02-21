@@ -7,7 +7,7 @@ const Navbar = () => {
 	const { isAuth, setToken, user, setIsAuth } = useContext(ContextProvider);
 
 	return (
-		<nav className="bg-gray-800 text-white shadow-md">
+		<nav className="w-full bg-gray-800 text-white shadow-md">
 			<div className="container mx-auto flex justify-between items-center py-4 px-6">
 				<Link to="/" className="text-2xl font-bold text-white hover:text-gray-300 transition">
 					Todo App
@@ -29,7 +29,7 @@ const Navbar = () => {
 								{user.name && <span className="w-8 h-8 bg-blue-500 text-white flex items-center justify-center rounded-full">
 									{user.name?.charAt(0).toUpperCase()}
 								</span>}
-								{user.name && <span className="text-sm font-medium">{user.name}</span>}
+								{user.name && <span className="hidden md:block text-sm font-medium">{user.name}</span>}
 							</div>
 
 							<button
