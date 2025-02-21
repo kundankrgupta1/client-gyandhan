@@ -36,7 +36,6 @@ const Home = () => {
 				</div>
 			</div>
 
-			<p>Demo user for login: <b>user@email.com password: 12345 </b></p>
 
 			<AllTodos filterValue={filterValue} sortValue={sortValue} />
 		</div>

@@ -26,10 +26,10 @@ const Navbar = () => {
 					) : (
 						<div className="flex items-center space-x-4">
 							<div className="flex items-center space-x-2 bg-gray-700 px-3 py-1 rounded-lg">
-								<span className="w-8 h-8 bg-blue-500 text-white flex items-center justify-center rounded-full">
+								{user.name && <span className="w-8 h-8 bg-blue-500 text-white flex items-center justify-center rounded-full">
 									{user.name?.charAt(0).toUpperCase()}
-								</span>
-								<span className="text-sm font-medium">{user.name}</span>
+								</span>}
+								{user.name && <span className="text-sm font-medium">{user.name}</span>}
 							</div>
 
 							<button

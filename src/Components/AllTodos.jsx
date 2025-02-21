@@ -29,11 +29,13 @@ const AllTodos = ({ filterValue, sortValue }) => {
 
 	return (
 		<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-			{data.map((item) => {
-				return (
-					<TodoCard key={item._id} item={item} fetchData={fetchData} />
-				)
-			})}
+			{data.length === 0 ? <>no Task</> :
+				data.map((item) => {
+					return (
+						<TodoCard key={item._id} item={item} fetchData={fetchData} />
+					)
+				})
+			}
 		</div>
 	)
 }
