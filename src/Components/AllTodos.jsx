@@ -33,9 +33,9 @@ const AllTodos = ({ filterValue, sortValue }) => {
 
 	if (isLoading) {
 		return (
-			<div className="text-center flex justify-center items-center h-screen font-bold text-2xl">
+			<div className="text-center flex flex-col gap-2 justify-center items-center h-screen font-bold text-2xl">
 				Loading...
-				<p>Please note: The backend for this site is deployed on Render.com, which may take some time to respond. Typically, it takes less than 3 to 4 minutes. Kindly wait for the server's response. </p>
+				<p className="text-sm text-red-600"><span className="text-black">Please note:</span> The backend for this site is deployed on Render.com, which may take some time to respond. Typically, it takes less than 3 to 4 minutes. Kindly wait for the server's response. </p>
 			</div>
 		)
 	}
