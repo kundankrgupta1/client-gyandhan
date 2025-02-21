@@ -17,10 +17,10 @@ const Navbar = () => {
 					{!isAuth ? (
 						<>
 							<li>
-								<Link to="/login" className="hover:text-gray-300 transition">Login</Link>
+								<Link to="/login" className="hover:text-gray-300 transition bg-blue-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg transition">Login</Link>
 							</li>
 							<li>
-								<Link to="/signup" className="hover:text-gray-300 transition">Signup</Link>
+								<Link to="/signup" className="hover:text-gray-300 transition bg-blue-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg transition">Signup</Link>
 							</li>
 						</>
 					) : (

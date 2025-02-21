@@ -41,7 +41,7 @@ const AllTodos = ({ filterValue, sortValue }) => {
 
 	return (
 		<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-			{data.length === 0 ? <div className="flex justify-center items-center h-screen font-bold text-2xl">no Task</div> :
+			{data.length === 0 ? <div className="flex justify-center items-center h-screen font-bold text-2xl">No Tasks or need to login</div> :
 				data.map((item) => {
 					return (
 						<TodoCard key={item._id} item={item} fetchData={fetchData} />
