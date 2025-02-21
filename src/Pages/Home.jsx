@@ -35,8 +35,7 @@ const Home = () => {
 					</select>
 				</div>
 			</div>
-
-
+			<p><b>Dummy: </b>Email: someone@gmail.com | password: someone@gmail.com</p>
 			<AllTodos filterValue={filterValue} sortValue={sortValue} />
 		</div>
 	)
